@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoSync | World Clock</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock-frame">
+            <div class="timezone-selector">
+                <select id="timezone-select">
+                    <option value="local">🏠 Local Time</option>
+                    
+                    <!-- Americas -->
+                    <optgroup label="Americas">
+                        <option value="America/New_York">🇺🇸 New York, USA</option>
+                        <option value="America/Los_Angeles">🇺🇸 Los Angeles, USA</option>
+                        <option value="America/Chicago">🇺🇸 Chicago, USA</option>
+                        <option value="America/Toronto">🇨🇦 Toronto, Canada</option>
+                        <option value="America/Vancouver">🇨🇦 Vancouver, Canada</option>
+                        <option value="America/Mexico_City">🇲🇽 Mexico City, Mexico</option>
+                        <option value="America/Sao_Paulo">🇧🇷 São Paulo, Brazil</option>
+                        <option value="America/Argentina/Buenos_Aires">🇦🇷 Buenos Aires, Argentina</option>
+                        <option value="America/Lima">🇵🇪 Lima, Peru</option>
+                        <option value="America/Bogota">🇨🇴 Bogota, Colombia</option>
+                        <option value="America/Santiago">🇨🇱 Santiago, Chile</option>
+                        <option value="America/Caracas">🇻🇪 Caracas, Venezuela</option>
+                    </optgroup>
+
+                    <!-- Europe -->
+                    <optgroup label="Europe">
+                        <option value="Europe/London">🇬🇧 London, UK</option>
+                        <option value="Europe/Paris">🇫🇷 Paris, France</option>
+                        <option value="Europe/Berlin">🇩🇪 Berlin, Germany</option>
+                        <option value="Europe/Rome">🇮🇹 Rome, Italy</option>
+                        <option value="Europe/Madrid">🇪🇸 Madrid, Spain</option>
+                        <option value="Europe/Amsterdam">🇳🇱 Amsterdam, Netherlands</option>
+                        <option value="Europe/Brussels">🇧🇪 Brussels, Belgium</option>
+                        <option value="Europe/Vienna">🇦🇹 Vienna, Austria</option>
+                        <option value="Europe/Stockholm">🇸🇪 Stockholm, Sweden</option>
+                        <option value="Europe/Oslo">🇳🇴 Oslo, Norway</option>
+                        <option value="Europe/Copenhagen">🇩🇰 Copenhagen, Denmark</option>
+                        <option value="Europe/Dublin">🇮🇪 Dublin, Ireland</option>
+                        <option value="Europe/Moscow">🇷🇺 Moscow, Russia</option>
+                    </optgroup>
+
+                    <!-- Asia -->
+                    <optgroup label="Asia">
+                        <option value="Asia/Tokyo">🇯🇵 Tokyo, Japan</option>
+                        <option value="Asia/Shanghai">🇨🇳 Shanghai, China</option>
+                        <option value="Asia/Hong_Kong">🇭🇰 Hong Kong</option>
+                        <option value="Asia/Singapore">🇸🇬 Singapore</option>
+                        <option value="Asia/Seoul">🇰🇷 Seoul, South Korea</option>
+                        <option value="Asia/Dubai">🇦🇪 Dubai, UAE</option>
+                        <option value="Asia/Bangkok">🇹🇭 Bangkok, Thailand</option>
+                        <option value="Asia/Kolkata">🇮🇳 Mumbai, India</option>
+                        <option value="Asia/Jakarta">🇮🇩 Jakarta, Indonesia</option>
+                        <option value="Asia/Manila">🇵🇭 Manila, Philippines</option>
+                        <option value="Asia/Taipei">🇹🇼 Taipei, Taiwan</option>
+                        <option value="Asia/Kuala_Lumpur">🇲🇾 Kuala Lumpur, Malaysia</option>
+                    </optgroup>
+
+                    <!-- Oceania -->
+                    <optgroup label="Oceania">
+                        <option value="Australia/Sydney">🇦🇺 Sydney, Australia</option>
+                        <option value="Australia/Melbourne">🇦🇺 Melbourne, Australia</option>
+                        <option value="Australia/Perth">🇦🇺 Perth, Australia</option>
+                        <option value="Pacific/Auckland">🇳🇿 Auckland, New Zealand</option>
+                        <option value="Pacific/Fiji">🇫🇯 Fiji</option>
+                    </optgroup>
+
+                    <!-- Africa -->
+                    <optgroup label="Africa">
+                        <option value="Africa/Cairo">🇪🇬 Cairo, Egypt</option>
+                        <option value="Africa/Johannesburg">🇿🇦 Johannesburg, South Africa</option>
+                        <option value="Africa/Lagos">🇳🇬 Lagos, Nigeria</option>
+                        <option value="Africa/Nairobi">🇰🇪 Nairobi, Kenya</option>
+                        <option value="Africa/Casablanca">🇲🇦 Casablanca, Morocco</option>
+                        <option value="Africa/Addis_Ababa">🇪🇹 Addis Ababa, Ethiopia</option>
+                        <option value="Africa/Dar_es_Salaam">🇹🇿 Dar es Salaam, Tanzania</option>
+                        <option value="Africa/Accra">🇬🇭 Accra, Ghana</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div id="clock"></div>
+            <div class="date" id="date"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
